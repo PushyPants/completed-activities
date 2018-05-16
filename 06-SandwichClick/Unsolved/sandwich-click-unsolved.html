@@ -49,9 +49,11 @@
   
 
         $(document).on('click', 'h3', function() {
+          // switch (this.id) would also work
           switch ($(this).attr('id')) {
             case 'pbj' : 
                 alert('Pees Bees Jays');  
+                // pbjCounter++ would also wok since adding only 1 to the value
                 pbjCounter += 1;
                 alert("Annnd you've eaten like "+pbjCounter+" of them...");            
               break;
